@@ -16,7 +16,6 @@
     </div>
     <p>Another text</p>
     <script>
-        let div = document.querySelectorAll("div#text");
         let childs = document.querySelectorAll("div#text > p");
         for (let i = 0; i < childs.length; i++) {
             console.log("Selector text " + i + ": " + childs[i].innerHTML);
