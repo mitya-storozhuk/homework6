@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- task4 -->
+     <!-- task4 -->
     <ul id="list">
         <li>1</li>
         <li>2</li>
@@ -16,8 +16,8 @@
         <li>5</li>
     </ul>
     <script>
-        let ul = document.getElementById("list");
-        console.log(ul.childNodes[1].innerHTML + ", " + ul.childNodes[9].innerHTML + ", " + ul.childNodes[3].innerHTML + ", " + ul.childNodes[7].innerHTML + ", " + ul.childNodes[5].innerHTML);
+        let ul = document.getElementById("list").childNodes;
+        console.log(ul[1].innerHTML + ", " + ul[9].innerHTML + ", " + ul[3].innerHTML + ", " + ul[7].innerHTML + ", " + ul[5].innerHTML);
         let li = document.querySelectorAll("#list > li");
         console.log(li[0].innerHTML  + ", " + li[4].innerHTML + ", " + li[1].innerHTML + ", " + li[3].innerHTML + ", " + li[2].innerHTML);
     </script>
