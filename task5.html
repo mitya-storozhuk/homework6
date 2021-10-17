@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- task5 -->
+    <h1>I'am a big header!!!</h1>
+    <div id="myDiv">
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <p>Third paragraph</p>
+        <p>Fourth paragraph</p>
+    </div>
+    <ul id="myList">
+        <li>Make</li>
+        <li>me</li>
+        <li>horizontal!</li>
+    </ul>
+    <span>Make me invisible, please!</span>
+    <script>
+        let h1 = document.querySelector("h1");
+        h1.style.display = "inline";
+        h1.style.background = "rgb(144, 238, 144)";
+        let div = document.getElementById("myDiv").childNodes;
+        div[1].style.fontWeight = "bold";
+        div[3].style.color = "red";
+        div[5].style.textDecoration = "underline";
+        div[7].style.fontStyle = "italic";
+        let ul = document.getElementById("myList");
+        let p = document.createElement("p");
+        p.innerHTML = "Makemehorizontal!";
+        p.style.paddingLeft = "40px";
+        ul.before(p);
+        ul.remove();
+        document.querySelector("span").style.display = "none";
+    </script>
+</body>
+</html>
