@@ -31,8 +31,10 @@
         div[5].style.textDecoration = "underline";
         div[7].style.fontStyle = "italic";
         let ul = document.getElementById("myList");
+        let ul1 = document.getElementById("myList").childNodes;
+        let newText = ([ul1[1].innerHTML, ul1[3].innerHTML, ul1[5].innerHTML]).join('');
         let p = document.createElement("p");
-        p.innerHTML = "Makemehorizontal!";
+        p.innerHTML = newText;
         p.style.paddingLeft = "40px";
         ul.before(p);
         ul.remove();
